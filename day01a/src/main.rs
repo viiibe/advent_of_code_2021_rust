@@ -4,7 +4,7 @@ use std::path::Path;
 
 fn main() {
     let mut depths: Vec<u16> = Vec::new();
-    if let Ok(lines) = read_lines("./input") {
+    if let Ok(lines) = read_lines("./input.txt") {
         for line in lines {
             if let Ok(depth) = line {
                 let d = depth.trim().parse::<u16>().expect("Error");
